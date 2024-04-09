@@ -1,0 +1,132 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <!-- User Profile Image -->
+    <include
+        android:id="@+id/headeruser"
+        layout="@layout/header" />
+
+    <ImageView
+        android:id="@+id/profileImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/headeruser"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/profile"
+        android:scaleType="centerCrop"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:padding="15dp"/>
+
+    <!-- User Name and Email -->
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="John Doe"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:layout_below="@id/profileImage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="john.doe@example.com"
+        android:textSize="14sp"
+        android:textColor="@android:color/darker_gray"
+        android:layout_below="@id/username"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="4dp"/>
+
+    <!-- User ID -->
+    <TextView
+        android:id="@+id/userId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="User ID: 12345"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:layout_below="@id/email"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Number of Books Borrowed -->
+    <TextView
+        android:id="@+id/numBooksBorrowed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Books Borrowed: 3"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:layout_below="@id/userId"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Current Book Borrowed -->
+    <TextView
+        android:id="@+id/currentBook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Current Book: The Art of Programming"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:layout_below="@id/numBooksBorrowed"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Borrowing Details (Real-time) -->
+    <TextView
+        android:id="@+id/borrowDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Borrowed on: Jan 31, 2024\nReturn by: Feb 14, 2024"
+        android:textSize="14sp"
+        android:textColor="@android:color/darker_gray"
+        android:layout_below="@id/currentBook"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"/>
+
+    <!-- History Section -->
+    <TextView
+        android:id="@+id/borrowHistoryLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/borrowDetails"
+        android:text="Borrowing History"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+           android:layout_marginTop="16dp"
+        android:layout_marginStart="15dp"/>
+
+    <TextView
+        android:id="@+id/borrowHistory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1. The Art of Programming - Borrowed on Jan 25, 2024 - Returned on Feb 5, 2024\n2. History of Science - Borrowed on Feb 1, 2024 - Due on Feb 15, 2024"
+        android:textSize="14sp"
+        android:textColor="@android:color/darker_gray"
+        android:layout_below="@id/borrowHistoryLabel"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="15dp"/>
+
+    <!-- Edit Profile Button -->
+    <Button
+        android:id="@+id/editProfileButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit Profile"
+        android:background="?attr/colorPrimary"
+        android:textColor="@android:color/white"
+        android:layout_below="@id/borrowHistory"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "643061335089",
+    "project_id": "library-link-3168b",
+    "storage_bucket": "library-link-3168b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:643061335089:android:19e4113b240739a1ad8110",
+        "android_client_info": {
+          "package_name": "com.example.librarylink"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCiyb9E8fx4rhz0cG54ZQLbBrei8uLV_Sc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,32 @@
+<!-- header_layout.xml -->
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/black"
+    >
+
+    <!-- App Name -->
+    <TextView
+        android:id="@+id/appName"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="Library Link"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        android:gravity="center_vertical"
+        android:layout_marginStart="16dp"
+        android:textStyle="bold"/>
+
+    <!-- Menu Icon (on the right) -->
+    <ImageView
+        android:id="@+id/menuIcon"
+        android:layout_width="85dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="end"
+        android:layout_marginEnd="9dp"
+        android:src="@drawable/menu" />
+
+</RelativeLayout>

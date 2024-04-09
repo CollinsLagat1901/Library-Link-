@@ -1,0 +1,167 @@
+<!-- librarian_dashboard.xml -->
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- Librarian Information -->
+        <ImageView
+            android:id="@+id/profileImage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/profile"
+            android:scaleType="centerCrop"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="16dp"/>
+        <TextView
+            android:id="@+id/librarianName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Librarian: John Doe"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:layout_below="@id/profileImage"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Book Management Section -->
+        <TextView
+            android:id="@+id/bookManagementTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Book Management"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"
+            android:layout_below="@id/librarianName"
+            android:layout_marginTop="16dp"/>
+
+        <!-- Add New Book Button -->
+        <Button
+            android:id="@+id/btnAddBook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add New Book"
+            android:background="?attr/colorPrimary"
+            android:textColor="@android:color/white"
+            android:layout_below="@id/bookManagementTitle"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Edit Book Details Button -->
+        <Button
+            android:id="@+id/btnEditBook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Edit Book Details"
+            android:background="?attr/colorPrimary"
+            android:textColor="@android:color/white"
+            android:layout_below="@id/btnAddBook"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Borrowing Management Section -->
+        <TextView
+            android:id="@+id/borrowingManagementTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Borrowing Management"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"
+            android:layout_below="@id/btnEditBook"
+            android:layout_marginTop="16dp"/>
+
+        <!-- Check In/Check Out Button -->
+        <Button
+            android:id="@+id/btnCheckInOut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Check In/Check Out"
+            android:background="?attr/colorPrimary"
+            android:textColor="@android:color/white"
+            android:layout_below="@id/borrowingManagementTitle"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Fine Management Button -->
+        <Button
+            android:id="@+id/btnFineManagement"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fine Management"
+            android:background="?attr/colorPrimary"
+            android:textColor="@android:color/white"
+            android:layout_below="@id/btnCheckInOut"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Communication Section -->
+        <TextView
+            android:id="@+id/communicationTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Communication"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"
+            android:layout_below="@id/btnFineManagement"
+            android:layout_marginTop="16dp"/>
+
+        <!-- Notifications Button -->
+        <Button
+            android:id="@+id/btnNotifications"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Notifications"
+            android:background="?attr/colorPrimary"
+            android:textColor="@android:color/white"
+            android:layout_below="@id/communicationTitle"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Reports and Analytics Button -->
+        <Button
+            android:id="@+id/btnReportsAnalytics"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Reports and Analytics"
+            android:background="?attr/colorPrimary"
+            android:textColor="@android:color/white"
+            android:layout_below="@id/btnNotifications"
+            android:layout_marginTop="8dp"/>
+
+        <!-- System Configuration Section -->
+        <TextView
+            android:id="@+id/systemConfigurationTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="System Configuration"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"
+            android:layout_below="@id/btnReportsAnalytics"
+            android:layout_marginTop="16dp"/>
+
+        <!-- Manage Settings Button -->
+        <Button
+            android:id="@+id/btnManageSettings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Manage Settings"
+            android:background="?attr/colorPrimary"
+            android:textColor="@android:color/white"
+            android:layout_below="@id/systemConfigurationTitle"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Edit Profile Button -->
+        <Button
+            android:id="@+id/btnEditProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Edit Profile"
+            android:background="?attr/colorPrimary"
+            android:textColor="@android:color/white"
+            android:layout_below="@id/btnManageSettings"
+            android:layout_marginTop="8dp"/>
+
+    </RelativeLayout>
+</ScrollView>
